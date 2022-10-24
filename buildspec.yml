@@ -3,14 +3,14 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      php: 7.3
+      php: 8.1.0
   pre_build: # commands to be run before build
     commands:
       - echo Logging in to Amazon ECR....
       - aws --version
       # login to Elastic container registry
       - eval $(aws ecr get-login --region us-east-1 --no-include-email | sed 's|https://||')
-      - REPOSITORY_URI=<AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/<YOUR_AWS_IAM_USERNAME>/laravel-web-cursos
+      - REPOSITORY_URI=<AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/<YOUR_AWS_IAM_USERNAME>/laravel-docker-aws
       - IMAGE_TAG=1.0
   build:
     commands:
