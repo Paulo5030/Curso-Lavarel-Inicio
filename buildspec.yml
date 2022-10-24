@@ -10,7 +10,7 @@ phases:
       - aws --version
       # login to Elastic container registry
       - eval $(aws ecr get-login --region us-east-1 --no-include-email | sed 's|https://||')
-        - REPOSITORY_URI=<AWS_ACCOUNT_ID>.dkr.ecr.us-east-1.amazonaws.com/<YOUR_AWS_IAM_USERNAME>/laravel/web/cursos
+      - REPOSITORY_URI=.dkr.ecr.us-east-1.amazonaws.com/laravel/web/cursos
       - IMAGE_TAG=1.0
   build:
     commands:
