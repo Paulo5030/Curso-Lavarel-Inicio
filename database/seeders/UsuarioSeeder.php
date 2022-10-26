@@ -15,7 +15,7 @@ class UsuarioSeeder extends Seeder
     public function run()
     {
         $dados = [
-            'name'=> 'Uninove',
+            'name'=> 'Uninove10)',
             'email'=> 'uninove@gmail.com',
             'password'=> bcrypt('uninove10'),
         ];
