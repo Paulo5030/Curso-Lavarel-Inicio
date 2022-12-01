@@ -16,7 +16,7 @@
       <header>
           <nav>
               <div class="nav-wrapper red">
-                  <a style="text-align: center" href="#!" class="brand-logo">Curso de laravel</a>
+                  <a style="text-align: center" href="#!" class="brand-logo">TechPlace</a>
                   <a href="#" data-target="mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                   <ul class="right hide-on-med-and-down">
                       <li><a href="/">Home</a></li>
